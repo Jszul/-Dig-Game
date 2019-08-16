@@ -1,0 +1,81 @@
+/*Joseph Szul */
+/*Jeff Gardner */
+/*Final Project main stylesheet*/
+
+.data
+{
+	text-align: center;
+}
+body{
+	background-position: center;
+  	text-align: center;
+}
+#message
+{
+	color: red;
+}
+
+#shovel {
+	left: 25%;
+	opacity: 0.88;
+	position: absolute;
+}
+
+#note {
+	left: 30%;
+	opacity: 0.77;
+	position: absolute;
+}
+
+
+table {
+	margin-top: 50px;
+	margin-bottom: 20px;
+  	border: 5px solid black;
+  	border-radius: 20px;
+  	display:inline-block;
+  	background-color: black;
+  	opacity: 0.77;
+  	margin-left: 50px;
+/*
+	float: left;
+*/
+	color: white;
+}
+th{
+	color: white;
+	font-weight: 300;
+}
+img{
+	width: 52px;
+	height: 52px;
+}
+.square {
+  	background-color: #000000;
+  	opacity: 0.77;
+  	cursor: pointer;
+  	width: 52px;
+  	height: 52px;
+}
+.counters
+{
+	font-weight: bold;
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 
+	0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}
+.wrap {
+	width: 100%;
+	overflow:visible;
+}
+
+.fleft {
+    float:left; 
+    width: 50%;
+    height: 400px;
+}
+
+.fright {
+	float: right;
+    height: 400px;
+    width: 50%;
+}

@@ -1,0 +1,89 @@
+<!--Joseph Szul -->
+<!--Jeff Gardner -->
+<!--Final Project html fil for game-->
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Game Board</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+ crossorigin="anonymous"></script>
+<script type="text/javascript" src="board.js"></script>
+<script type="text/javascript" src="game.js"></script>
+<script src="jquery.smartmenus.min.js"></script>
+<link rel="stylesheet" href="sm-core-css.css"> 
+<link rel="stylesheet" href="sm-clean.css">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"/>
+</head>
+
+<body>
+<ul class="sm sm-clean">
+        <li><a href="#">The Game</a>
+          <ul>
+            <li>2-Player Mode Coming Soon!</li>
+          </ul>
+        </li>
+        <li><a href="#">About The Project </a>
+          <ul>
+            <li><a href="http://studentweb.cdm.depaul.edu/~jgardn18/final_summary.html">Read Project Summary</a></li>
+            <li><a href="final_summary.docx"> Download Project Summary </a></li>
+          </ul>
+        </li>
+        <li><a href="#">Game Options </a>
+          <ul>
+            <li><a href="#">Difficulty </a>
+              <ul>
+                <li><input type="radio" name="mode" value="hard"> Hard Mode</li>
+                <li><input type="radio" name="mode" value="easy" checked> Easy Mode</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+  <h1>Archaeology Board</h1>
+	<p>To open a summary about the project, <a href="http://studentweb.cdm.depaul.edu/~jgardn18/final_summary.html"> click here </a></p>
+  <p>To download a word document of the summary<a href="final_summary.docx"> click here </a></p>
+    <br>
+  <input type="radio" name="mode" value="easy" checked> Easy Mode
+  <input type="radio" name="mode" value="hard"> Hard Mode
+    <br>
+  <p id="message"></p>
+    <br>
+  <input type="button" name="reset" onclick="reset()" value="Reset"/><br>
+	<div id="foots"><p>Your rating:</p></div>
+    * Drag the Shovel over a square to dig!<div id="shovel"> <img src="Shovel.png"/> </div><br>
+    <div class="tbls">
+      <div class="wrap">
+        <div class="fleft">
+      	  <table id="board">
+	         </table>
+        </div>
+      <div class="fright">
+        <table class="statTable">
+        <thead>
+          <tr>
+            <th>Successful Digs </th>
+            <th>Unsuccessful Digs</th>
+            <th>Dig Counter  </th>
+            <th>Artifacts Found   </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><label class="counters" id="totalSuccess">0</label></td>
+            <td><label class="counters" id="totalUnsuccess">0</label></td>
+            <td><label class="counters" id="totalAttempts">0</label></td>
+            <td><label class="counters" id="totalFound">0</label></td>
+          </tr>
+        </tbody>
+        </table>
+  	  <table id="dataTable"></table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
