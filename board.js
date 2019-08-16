@@ -1,10 +1,5 @@
 // GameBoard object for playing a simple game of Archaeology and related games
 //
-// Initially developed by Craig Miller, April 2012
-// Revised by Craig Miller, September 2012
-// Updated January 2018
-//
-//
 // Useful GameBoard methods include:
 //
 // setBoard() -- randomly place ruins on board
